@@ -1,4 +1,5 @@
 import ProfilePic from "../assets/img/profile-pic.jpeg";
+import Resume from "../assets/Sridhar_Jeganathan_-_Full_Stack_Developer_1.pdf";
 function Hero() {
   return (
     <main
@@ -20,7 +21,7 @@ function Hero() {
         </p>
         <div className="flex justify-center gap-4 mt-4">
           <a
-            href="/src/assets/Sridhar_Jeganathan_-_Full_Stack_Developer_1.pdf"
+            href={Resume}
             className="border border-blue-500 text-blue-500 px-4 py-2 rounded-full hover:bg-blue-500 hover:text-white active:bg-blue-600 active:text-white transition-colors duration-300"
             target="_blank"
           >
