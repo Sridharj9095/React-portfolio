@@ -1,6 +1,19 @@
+import dogbible from "../assets/img/dogbible.png";
+import childrenNgo from "../assets/img/children-ngo.png";
+import poplab from "../assets/img/poplab.png";
+import onepage from "../assets/img/onepage.png";
+import linkedin from "../assets/img/linkedin.png";
+import bakersmart from "../assets/img/bakersmart.png";
+import restaurent from "../assets/img/restaurent.png";
+import javascriptForm from "../assets/img/javascript-form.png";
+import adminPanel from "../assets/img/admin-panel.png";
+import reactCalculator from "../assets/img/react-calculator.png";
+import reactPagination from "../assets/img/react-pagination.png";
+import reactTodolist from "../assets/img/react-todolist.png";
+
 const projects = [
   {
-    img: "src/assets/img/dogbible.png",
+    img: dogbible,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/Dogbible",
     live: "https://dogbible.netlify.app/",
@@ -8,7 +21,7 @@ const projects = [
     title: "Dogbible Petshop",
   },
   {
-    img: "src/assets/img/children-ngo.png",
+    img: childrenNgo,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/NGO",
     live: "https://ngo-childcare.netlify.app/",
@@ -16,7 +29,7 @@ const projects = [
     title: "Children NGO",
   },
   {
-    img: "src/assets/img/poplab.png",
+    img: poplab,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/Poplab",
     live: "https://poplab-lollipop.netlify.app/",
@@ -24,7 +37,7 @@ const projects = [
     title: "Poplab Music",
   },
   {
-    img: "src/assets/img/onepage.png",
+    img: onepage,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BOOTSTRAP/Onepage",
     live: "https://onepage-nika.netlify.app/",
@@ -32,7 +45,7 @@ const projects = [
     title: "Onepage Bootstrap",
   },
   {
-    img: "src/assets/img/linkedin.png",
+    img: linkedin,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BOOTSTRAP/Linkedin",
     live: "https://linked-in-speed.netlify.app/",
@@ -40,7 +53,7 @@ const projects = [
     title: "LinkedIn Clone",
   },
   {
-    img: "src/assets/img/bakersmart.png",
+    img: bakersmart,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BakersMart",
     live: "https://bakersmart.netlify.app/",
@@ -48,7 +61,7 @@ const projects = [
     title: "Bakersmart Carousel",
   },
   {
-    img: "src/assets/img/restaurent.png",
+    img: restaurent,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BOOTSTRAP/Sample",
     live: "https://bootstrap-sample.netlify.app/",
@@ -56,7 +69,7 @@ const projects = [
     title: "Restaurant Template",
   },
   {
-    img: "src/assets/img/javascript-form.png",
+    img: javascriptForm,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/Javascript/FormValidate",
     live: "https://javascript-form-validate.netlify.app/",
@@ -64,28 +77,28 @@ const projects = [
     title: "JavaScript Form Validation",
   },
   {
-    img: "src/assets/img/admin-panel.png",
+    img: adminPanel,
     github: "https://github.com/Sridharj9095/React-Admin-Panel-Frontend",
     live: "https://react2adminpanel.netlify.app/",
     alt: "React Admin Panel",
     title: "React Admin Panel",
   },
   {
-    img: "src/assets/img/react-calculator.png",
+    img: reactCalculator,
     github: "https://github.com/Sridharj9095/React-Calculator",
     live: "https://calculator-react-vite-tailwind.netlify.app/",
     alt: "React Calculator",
     title: "React Calculator",
   },
   {
-    img: "src/assets/img/react-pagination.png",
+    img: reactPagination,
     github: "https://github.com/Sridharj9095/Pagination-React",
     live: "https://react1pagination.netlify.app/",
     alt: "React Pagination",
     title: "React Pagination",
   },
   {
-    img: "src/assets/img/react-todolist.png",
+    img: reactTodolist,
     github: "https://github.com/Sridharj9095/Todo-List-React",
     live: "https://todolist-tailwind.netlify.app/",
     alt: "React To-Do List",

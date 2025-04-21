@@ -1,3 +1,4 @@
+import ProfilePic from "../assets/img/profile-pic.jpeg";
 function Hero() {
   return (
     <main
@@ -6,7 +7,7 @@ function Hero() {
     >
       <div className="h-[350px] w-[350px] rounded-full overflow-hidden">
         <img
-          src="src/assets/img/profile-pic.jpeg"
+          src={ProfilePic}
           alt="profile"
           className="w-full h-full object-cover"
         />
