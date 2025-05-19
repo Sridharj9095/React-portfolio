@@ -6,7 +6,7 @@ function Contact() {
       </h2>
       <div className="flex justify-center gap-4">
         <a
-          href="mailto:sridhar.j9095@gmail.com"
+          href="mailto:sridharjeganathan96@gmail.com"
           className="border border-blue-500 text-blue-500 px-4 py-2 rounded-full hover:bg-blue-500 hover:text-white active:bg-blue-600 active:text-white transition-colors duration-300"
         >
           <i className="fas fa-envelope"></i> Email Me

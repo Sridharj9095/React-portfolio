@@ -1,5 +1,5 @@
 import ProfilePic from "../assets/img/profile-pic.jpeg";
-import Resume from "../assets/Sridhar_Jeganathan_-_Full_Stack_Developer_1.pdf";
+import Resume from "../assets/Sridhar_Jeganathan_-_UI_Developer .pdf";
 function Hero() {
   return (
     <main
@@ -16,9 +16,7 @@ function Hero() {
       <div className="text-center">
         <p className="mb-2">Hello, I'm</p>
         <h1 className="text-4xl font-bold">Sridhar Jeganathan</h1>
-        <p className="text-xl text-gray-500 font-semibold">
-          MERN Stack Developer
-        </p>
+        <p className="text-xl text-gray-500 font-semibold">UI Developer</p>
         <div className="flex justify-center gap-4 mt-4">
           <a
             href={Resume}
