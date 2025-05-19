@@ -108,7 +108,10 @@ const projects = [
 
 function Projects() {
   return (
-    <section id="projects" className="max-w-6xl mx-auto px-4 py-10">
+    <section
+      id="projects"
+      className="scroll-mt-16 max-w-6xl mx-auto px-4 py-10"
+    >
       <h2 className="text-2xl font-bold text-center mb-6">My Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, idx) => (

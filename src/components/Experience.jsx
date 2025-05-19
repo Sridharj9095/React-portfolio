@@ -1,6 +1,9 @@
 function Experience() {
   return (
-    <section id="experience" className="max-w-6xl mx-auto px-4 py-10">
+    <section
+      id="experience"
+      className="scroll-mt-16 max-w-6xl mx-auto px-4 py-10"
+    >
       <h2 className="text-2xl font-bold text-center mb-6">Experience</h2>
 
       <div className="mb-6 text-center">

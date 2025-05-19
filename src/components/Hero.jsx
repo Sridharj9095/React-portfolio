@@ -4,7 +4,7 @@ function Hero() {
   return (
     <main
       id="portfolio"
-      className="flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-10"
+      className="scroll-mt-16 flex flex-col md:flex-row items-center justify-center gap-6 px-4 py-10"
     >
       <div className="h-[350px] w-[350px] rounded-full overflow-hidden">
         <img

@@ -30,7 +30,7 @@ function Header() {
             md:block md:opacity-100
           `}
         >
-          {["portfolio", "projects", "contact"].map((item) => (
+          {["portfolio", "experience", "projects", "contact"].map((item) => (
             <li key={item}>
               <a
                 href={`#${item}`}
