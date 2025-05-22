@@ -69,19 +69,19 @@ function ProjectCarousel({ projects }) {
         onMouseEnter={stopAutoplay}
         onMouseLeave={startAutoplay}
       >
-        <div className="overflow-hidden" ref={emblaRef}>
+        <div className="overflow-hidden py-6" ref={emblaRef}>
           <div className="flex touch-pan-y">
             {projects.map(({ id, img, title, alt, github, live }) => (
               <div
                 key={id}
                 className="min-w-full sm:min-w-[80%] md:min-w-[60%] lg:min-w-[40%] px-4"
               >
-                <div className="bg-white rounded-lg shadow hover:shadow-xl transition-transform hover:-translate-y-2 duration-300 border-b border-gray-200">
+                <div className="bg-white rounded-lg shadow hover:shadow-gray-400 transition-transform hover:scale-105 duration-300 border-b border-gray-200">
                   <img
                     src={img}
                     alt={alt}
                     title={title}
-                    className="w-full h-50 object-cover rounded-t-lg"
+                    className="w-full h-46 object-cover rounded-t-lg"
                   />
                   <div className="py-2 px-4 flex justify-center items-center gap-8 bg-blue-50 rounded-b-lg">
                     <h4 className="text-center py-2 font-semibold">{title}</h4>

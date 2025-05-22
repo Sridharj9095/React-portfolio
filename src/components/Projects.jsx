@@ -132,14 +132,12 @@ const Projects = () => {
       <h2 className="text-2xl font-bold text-center mb-6">My Projects</h2>
 
       <div className="mb-10">
-        <h3 className="text-xl font-semibold mb-6 text-black">
-          React Projects
-        </h3>
+        <h3 className="text-xl font-semibold text-black">React Projects</h3>
         <ProjectCarousel projects={reactProjects} />
       </div>
 
       <div>
-        <h3 className="text-xl font-semibold mb-5 text-black">
+        <h3 className="text-xl font-semibold text-black">
           HTML, CSS & JavaScript Projects
         </h3>
         <ProjectCarousel projects={htmlProjects} />
