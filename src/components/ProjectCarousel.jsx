@@ -130,7 +130,7 @@ function ProjectCarousel({ projects }) {
           <FaArrowRight />
         </button>
       </div>
-      <div className="flex justify-center mt-4 gap-2">
+      <div className="flex justify-center mt-1 gap-2">
         {projects.map((_, index) => (
           <button
             key={index}
