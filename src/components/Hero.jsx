@@ -1,4 +1,4 @@
-import ProfilePic from "../assets/img/profile-pic.jpeg";
+import ProfilePic from "../assets/img/profile-pic.webp";
 import Resume from "../assets/Sridhar_Jeganathan_-_UI_Developer .pdf";
 function Hero() {
   return (

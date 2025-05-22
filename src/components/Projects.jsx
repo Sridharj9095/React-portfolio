@@ -1,160 +1,151 @@
-import dogbible from "../assets/img/dogbible.png";
-import childrenNgo from "../assets/img/children-ngo.png";
-import poplab from "../assets/img/poplab.png";
-import onepage from "../assets/img/onepage.png";
-import linkedin from "../assets/img/linkedin.png";
-import bakersmart from "../assets/img/bakersmart.png";
-import restaurent from "../assets/img/restaurent.png";
-import javascriptForm from "../assets/img/javascript-form.png";
-import adminPanel from "../assets/img/admin-panel.png";
-import reactCalculator from "../assets/img/react-calculator.png";
-import reactPagination from "../assets/img/react-pagination.png";
-import reactTodolist from "../assets/img/react-todolist.png";
+import images from "../assets/img";
+import ProjectCarousel from "../components/ProjectCarousel";
 
 const projects = [
   {
-    img: dogbible,
+    id: 1,
+    img: images.dogbible,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/Dogbible",
     live: "https://dogbible.netlify.app/",
-    alt: "Dogbible Project",
     title: "Dogbible Petshop",
+    alt: "Dogbible Project",
+    category: "html",
   },
   {
-    img: childrenNgo,
+    id: 2,
+    img: images.childrenNgo,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/NGO",
     live: "https://ngo-childcare.netlify.app/",
-    alt: "Children NGO",
     title: "Children NGO",
+    alt: "Children NGO",
+    category: "html",
   },
   {
-    img: poplab,
+    id: 3,
+    img: images.poplab,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/Poplab",
     live: "https://poplab-lollipop.netlify.app/",
-    alt: "Poplab Project",
     title: "Poplab Music",
+    alt: "Poplab Project",
+    category: "html",
   },
   {
-    img: onepage,
+    id: 4,
+    img: images.onepage,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BOOTSTRAP/Onepage",
     live: "https://onepage-nika.netlify.app/",
-    alt: "Onepage Project",
     title: "Onepage Bootstrap",
+    alt: "Onepage Project",
+    category: "html",
   },
   {
-    img: linkedin,
+    id: 5,
+    img: images.linkedin,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BOOTSTRAP/Linkedin",
     live: "https://linked-in-speed.netlify.app/",
-    alt: "LinkedIn Clone",
     title: "LinkedIn Clone",
+    alt: "LinkedIn Clone",
+    category: "html",
   },
   {
-    img: bakersmart,
+    id: 6,
+    img: images.bakersmart,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BakersMart",
     live: "https://bakersmart.netlify.app/",
-    alt: "Bakersmart",
     title: "Bakersmart Carousel",
+    alt: "Bakersmart",
+    category: "html",
   },
   {
-    img: restaurent,
+    id: 7,
+    img: images.restaurent,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/HTML/BOOTSTRAP/Sample",
     live: "https://bootstrap-sample.netlify.app/",
-    alt: "Restaurant Template",
     title: "Restaurant Template",
+    alt: "Restaurant Template",
+    category: "html",
   },
   {
-    img: javascriptForm,
+    id: 8,
+    img: images.javascriptForm,
     github:
       "https://github.com/Sridharj9095/Working-Area/tree/main/DreamTech/Javascript/FormValidate",
     live: "https://javascript-form-validate.netlify.app/",
-    alt: "JavaScript Form Validation",
     title: "JavaScript Form Validation",
+    alt: "JavaScript Form Validation",
+    category: "html",
   },
   {
-    img: adminPanel,
+    id: 9,
+    img: images.adminPanel,
     github: "https://github.com/Sridharj9095/React-Admin-Panel-Frontend",
     live: "https://react2adminpanel.netlify.app/",
-    alt: "React Admin Panel",
     title: "React Admin Panel",
+    alt: "React Admin Panel",
+    category: "react",
   },
   {
-    img: reactCalculator,
+    id: 10,
+    img: images.reactCalculator,
     github: "https://github.com/Sridharj9095/React-Calculator",
     live: "https://calculator-react-vite-tailwind.netlify.app/",
-    alt: "React Calculator",
     title: "React Calculator",
+    alt: "React Calculator",
+    category: "react",
   },
   {
-    img: reactPagination,
+    id: 11,
+    img: images.reactPagination,
     github: "https://github.com/Sridharj9095/Pagination-React",
     live: "https://react1pagination.netlify.app/",
-    alt: "React Pagination",
     title: "React Pagination",
+    alt: "React Pagination",
+    category: "react",
   },
   {
-    img: reactTodolist,
+    id: 12,
+    img: images.reactTodolist,
     github: "https://github.com/Sridharj9095/Todo-List-React",
     live: "https://todolist-tailwind.netlify.app/",
-    alt: "React To-Do List",
     title: "React To-Do List",
+    alt: "React To-Do List",
+    category: "react",
   },
 ];
 
-function Projects() {
+const Projects = () => {
+  const htmlProjects = projects.filter((p) => p.category === "html");
+  const reactProjects = projects.filter((p) => p.category === "react");
+
   return (
     <section
       id="projects"
-      className="scroll-mt-16 max-w-6xl mx-auto px-4 py-10"
+      className="max-w-6xl mx-auto px-4 py-10 scroll-mt-16"
     >
       <h2 className="text-2xl font-bold text-center mb-6">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-lg shadow hover:shadow-xl active:shadow-xl transition-transform hover:-translate-y-1 active:-translate-y-1 duration-300"
-          >
-            <div className="overflow-hidden">
-              <img
-                src={project.img}
-                alt={project.alt}
-                title={project.title}
-                loading="lazy"
-                className="w-full h-48 object-cover transition-transform duration-300 hover:scale-110 active:scale-110"
-              />
-            </div>
-            <div className="flex justify-around gap-4 py-2 border-t border-gray-200">
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub Repository"
-                title="GitHub Repository"
-                className="bg-white text-black p-3 rounded-full hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-200 flex items-center justify-between leading-[0]"
-              >
-                <i className="fab fa-github text-2xl"></i>
-              </a>
-              <a
-                href={project.live}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Live Demo"
-                title="Live Demo"
-                className="bg-white text-black p-3 rounded-full hover:bg-gray-200 focus:bg-gray-200 active:bg-gray-200 leading-[0] flex items-center justify-center"
-              >
-                <i className="fas fa-link text-xl"></i>
-              </a>
-            </div>
-          </div>
-        ))}
+
+      <div className="mb-10">
+        <h3 className="text-xl font-semibold mb-6 text-black">
+          React Projects
+        </h3>
+        <ProjectCarousel projects={reactProjects} />
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-5 text-black">
+          HTML, CSS & JavaScript Projects
+        </h3>
+        <ProjectCarousel projects={htmlProjects} />
       </div>
     </section>
   );
-}
+};
 
 export default Projects;
