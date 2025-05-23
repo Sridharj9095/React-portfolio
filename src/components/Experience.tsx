@@ -1,4 +1,6 @@
-function Experience() {
+import React from "react";
+
+const Experience: React.FC = () => {
   return (
     <section
       id="experience"
@@ -74,6 +76,6 @@ function Experience() {
       </div>
     </section>
   );
-}
+};
 
 export default Experience;

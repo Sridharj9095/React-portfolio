@@ -2,7 +2,20 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useEffect, useCallback, useRef, useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaGithub, FaLink } from "react-icons/fa";
 
-function ProjectCarousel({ projects }) {
+interface Project {
+  id: number;
+  img: string;
+  title: string;
+  alt: string;
+  github: string;
+  live: string;
+}
+
+interface ProjectCarouselProps {
+  projects: Project[];
+}
+
+function ProjectCarousel({ projects }: ProjectCarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
     skipSnaps: false,
@@ -11,7 +24,7 @@ function ProjectCarousel({ projects }) {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
   const [nextBtnEnabled, setNextBtnEnabled] = useState(false);
-  const autoplayRef = useRef(null);
+  const autoplayRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const stopAutoplay = () => {
     if (autoplayRef.current) {
@@ -39,7 +52,7 @@ function ProjectCarousel({ projects }) {
   }, [emblaApi]);
 
   const scrollTo = useCallback(
-    (index) => {
+    (index: number) => {
       stopAutoplay();
       emblaApi && emblaApi.scrollTo(index);
     },
@@ -76,7 +89,7 @@ function ProjectCarousel({ projects }) {
                 key={id}
                 className="min-w-full sm:min-w-[80%] md:min-w-[60%] lg:min-w-[40%] px-4"
               >
-                <div className="bg-white rounded-lg shadow hover:shadow-gray-400 transition-transform hover:scale-105 duration-300 border-b border-gray-200">
+                <div className="bg-white rounded-lg shadow hover:shadow-gray-400 transition-transform hover:scale-105 duration-300 border-b border-gray-200 cursor-pointer">
                   <img
                     src={img}
                     alt={alt}

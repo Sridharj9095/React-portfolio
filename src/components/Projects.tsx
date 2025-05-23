@@ -1,7 +1,18 @@
+import React from "react";
 import images from "../assets/img";
-import ProjectCarousel from "../components/ProjectCarousel";
+import ProjectCarousel from "./ProjectCarousel";
 
-const projects = [
+interface Project {
+  id: number;
+  img: string;
+  github: string;
+  live: string;
+  title: string;
+  alt: string;
+  category: string;
+}
+
+const projects: Project[] = [
   {
     id: 1,
     img: images.dogbible,
@@ -120,7 +131,7 @@ const projects = [
   },
 ];
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const htmlProjects = projects.filter((p) => p.category === "html");
   const reactProjects = projects.filter((p) => p.category === "react");
 

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow">
@@ -45,6 +45,6 @@ function Header() {
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

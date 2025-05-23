@@ -1,6 +1,7 @@
 import ProfilePic from "../assets/img/profile-pic.webp";
-import Resume from "../assets/Sridhar_Jeganathan_-_UI_Developer .pdf";
-function Hero() {
+import Resume from "../assets/Sridhar_Jeganathan_-_UI_Developer.pdf";
+
+const Hero: React.FC = () => {
   return (
     <main
       id="portfolio"
@@ -22,6 +23,7 @@ function Hero() {
             href={Resume}
             className="border border-blue-500 text-blue-500 px-4 py-2 rounded-full hover:bg-blue-500 hover:text-white active:bg-blue-600 active:text-white transition-colors duration-300"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Download CV
           </a>
@@ -57,6 +59,6 @@ function Hero() {
       </div>
     </main>
   );
-}
+};
 
 export default Hero;

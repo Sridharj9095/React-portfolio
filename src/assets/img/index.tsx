@@ -11,7 +11,7 @@ import reactCalculator from "./react-calculator.webp";
 import reactPagination from "./react-pagination.webp";
 import reactTodolist from "./react-todolist.webp";
 
-export default {
+const images = {
   dogbible,
   childrenNgo,
   poplab,
@@ -25,3 +25,5 @@ export default {
   reactPagination,
   reactTodolist,
 };
+
+export default images;

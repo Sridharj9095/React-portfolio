@@ -1,4 +1,6 @@
-function Contact() {
+import React from "react";
+
+const Contact: React.FC = () => {
   return (
     <section id="contact" className="max-w-6xl mx-auto px-4 py-10">
       <h2 className="text-2xl font-bold text-center mb-6">
@@ -14,6 +16,7 @@ function Contact() {
         <a
           href="https://www.linkedin.com/in/sridhar-jeganathan-681b992a6/"
           target="_blank"
+          rel="noopener noreferrer"
           className="border border-cyan-500 text-cyan-500 px-4 py-2 rounded-full hover:bg-cyan-500 hover:text-white active:bg-cyan-600 active:text-white transition-colors duration-300"
         >
           <i className="fab fa-linkedin"></i> LinkedIn
@@ -21,6 +24,6 @@ function Contact() {
       </div>
     </section>
   );
-}
+};
 
 export default Contact;
